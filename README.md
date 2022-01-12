@@ -4,7 +4,7 @@
 
 **Tip Calculator** computes the tip and total amount for a bill. The app uses the base amount and tip percentage to calculate the amount owed, and it also describes the quality of service based on the tip.
 
-Time spent: **1** hours spent in total
+Time spent: **2** hours spent in total
 
 ## Functionality
 
@@ -15,6 +15,11 @@ The following **required** functionality is completed:
 * [x] The tip and total amount are updated immediately when any of the inputs changes.
 * [x] The user sees a label or color update based on the tip amount.
 
+The following **extensions** are implemented:
+
+* [x] Custom colors palette selected
+
+
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
@@ -22,6 +27,7 @@ Here's a walkthrough of implemented user stories:
 <img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
+
 
 ## License
 
