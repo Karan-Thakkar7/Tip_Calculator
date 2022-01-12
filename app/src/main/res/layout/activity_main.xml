@@ -7,12 +7,92 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tvBaseLable"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="85dp"
+        android:text="Base"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/tvTipPercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tvBaseLable"
+        app:layout_constraintTop_toBottomOf="@+id/tvBaseLable"
+        tools:text="24%" />
+
+    <TextView
+        android:id="@+id/tvTipLable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Tip"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvTipPercentage"
+        app:layout_constraintTop_toBottomOf="@+id/tvTipPercentage" />
+
+    <TextView
+        android:id="@+id/tvTotalLable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Total"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvTipLable"
+        app:layout_constraintTop_toBottomOf="@+id/tvTipLable" />
+
+    <EditText
+        android:id="@+id/etBillAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:ems="8"
+        android:hint="Bill Amount"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvBaseLable"
+        app:layout_constraintStart_toEndOf="@+id/tvBaseLable"
+        app:layout_constraintTop_toTopOf="@+id/tvBaseLable"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="195dp"
+        android:layout_height="22dp"
+        android:max="30"
+        android:scrollbarSize="200dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTipPercentage"
+        app:layout_constraintStart_toStartOf="@+id/etBillAmount"
+        app:layout_constraintTop_toTopOf="@+id/tvTipPercentage"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/Tiplable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTipLable"
+        app:layout_constraintStart_toStartOf="@+id/seekBar"
+        app:layout_constraintTop_toTopOf="@+id/tvTipLable"
+        tools:text="19.96" />
+
+    <TextView
+        android:id="@+id/TotalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTotalLable"
+        app:layout_constraintStart_toStartOf="@+id/Tiplable"
+        app:layout_constraintTop_toTopOf="@+id/tvTotalLable"
+        tools:text="101" />
 </androidx.constraintlayout.widget.ConstraintLayout>
