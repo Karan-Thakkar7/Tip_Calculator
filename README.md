@@ -24,7 +24,7 @@ The following **extensions** are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://ibb.co/qpKvwyW' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/KqNFAQL.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 
 ## License
