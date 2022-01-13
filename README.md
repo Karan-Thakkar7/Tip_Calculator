@@ -17,7 +17,7 @@ The following **required** functionality is completed:
 
 The following **extensions** are implemented:
 
-* [x] Custom colors palette selected
+* [x] Custom colors palette selected https://ibb.co/qpKvwyW
 
 
 ## Video Walkthrough
